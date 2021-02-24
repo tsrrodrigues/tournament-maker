@@ -1,6 +1,8 @@
+import Wellcome from './screens/Home/index.js'
+
 const App = () => {
   return (
-    <h1>Teste</h1>
+    <Wellcome />
   );
 }
 
