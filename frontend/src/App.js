@@ -1,8 +1,11 @@
-import Wellcome from './screens/Home/index.js'
+import Home from './screens/Home/index.js'
+import styles from '../src/App.css'
 
 const App = () => {
   return (
-    <Wellcome />
+    <>
+    <Home />
+    </>
   );
 }
 
