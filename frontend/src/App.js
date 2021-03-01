@@ -1,8 +1,8 @@
 import Home from './screens/Home/index.js'
-import styles from '../src/App.css'
+import styles from './App.css'
 
 const App = () => {
-  return (
+   return (
     <>
     <Home />
     </>
