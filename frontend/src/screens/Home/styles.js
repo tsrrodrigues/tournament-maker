@@ -2,9 +2,6 @@ import styled from 'styled-components'
 
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 `;
 
 export const Header = styled.span`
@@ -12,43 +9,45 @@ export const Header = styled.span`
     justify-content: flex-end;
     margin: 1.5vh 2.5vw 0 0;
 
-    font-size: 2rem;
+    font-size: 4vh;
 `;
 
 export const Center = styled.div`
-    max-width: 80%;
-    height: 100vh;
-
     padding: 0 5vw;
-    margin: 0 10vw 0 10vw;
 
     flex-direction: column;
     display: flex;
     align-items: center;
-
-    transiction-delay: 0.2s;
   `;
      
 export const Title = styled.h1`
-    margin-top: 10vh;
+    margin-top: 6vh;
     color: var(--purple);
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 10vh;
     text-align: center;
+
+    @media (max-width: 520px) {
+        font-size: 6vh;
+        margin-bottom: 3vh;
+        margin-top: 4vh;
+    }
 `;
 
 export const Text = styled.p`
-    width: 40rem;
-    font-size: 2rem;
-    font-weight: 700;
+    max-width: 55%;
+    font-size: 4vh;
+
     text-align: center;
+
+    @media (max-width: 520px) {
+        max-width: 80%
+    }
 `;
 
 export const StartButton = styled.button`
-    height: auto;
     min-height: 3.5rem;
-    width: auto;
-    min-width: 17vw;
+    width: 220px;
 
     font-size: 2rem;
 
@@ -61,15 +60,24 @@ export const StartButton = styled.button`
     background: var(--pink);
     color: var(--white);
 
-    transition: 0.4s;
+    transition: background 0.4s;
 
     &:hover {
         background-color: var(--purple);
+    }
 
+    @media (max-width: 520px) {
+        width: 160px;
+        font-size: 4vh;
     }
 `;
 
 export const Image = styled.img`
-    height: 15rem;
-    margin-top: 4rem;
+    max-width: 50%;
+    margin-top: 7vh;
+
+    @media (max-width: 520px) {
+        max-width: 80%;
+        margin-top: 10vh;
+    }
 `;
