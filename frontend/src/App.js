@@ -1,6 +1,11 @@
+import Home from './screens/Home/index.js'
+import styles from './App.css'
+
 const App = () => {
-  return (
-    <h1>Teste</h1>
+   return (
+    <>
+    <Home />
+    </>
   );
 }
 
