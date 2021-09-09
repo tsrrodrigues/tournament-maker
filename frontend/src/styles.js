@@ -1,40 +1,44 @@
-* {
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-}
+  }
 
-:root {
+  :root {
     --white: #ffffff;
     --purple: #54086B;
     --pink: #FF0BAC;
     --blue: #00BEC5;
     --blue-dark: #050833;
-}
+  }
 
-@media(max-width: 1080px) {
+  @media(max-width: 1080px) {
     html {
         font-size: 93.75%;
     }
-}
+  }
 
-@media(max-width: 720px) {
+  @media(max-width: 720px) {
     html {
-        font-size: 87.5%;
+      font-size: 87.5%;
     }
-}
+  }
 
-button {
+  button {
     cursor: pointer;
-}
+  }
 
-a {
+  a {
     color: inherit;
     text-decoration: none;
-}
+  }
 
-img {
+  img {
     align-items: center;
     justify-content: center;
-}
+  }
+`
